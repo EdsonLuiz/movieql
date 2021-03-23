@@ -1,1 +1,2 @@
-console.log('Hello world')
+import graphqlYoga from 'graphql-yoga'
+
