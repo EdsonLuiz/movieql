@@ -19,5 +19,8 @@
   "homepage": "https://github.com/EdsonLuiz/movieql#readme",
   "devDependencies": {
     "git-commit-msg-linter": "^3.0.4"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
   }
 }
