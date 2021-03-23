@@ -1,5 +1,10 @@
 import {GraphQLServer} from 'graphql-yoga'
 
-const server = new GraphQLServer({})
+import resolvers from './graphql/resolvers'
+
+const server = new GraphQLServer({
+  typeDefs: "src/graphql/schema.graphql",
+  resolvers
+})
 
 server.start(() => console.log("Graphql server is running"))
