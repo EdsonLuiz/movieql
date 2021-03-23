@@ -8,6 +8,7 @@ $ cd movieql
 npm ci
 npm start
 ```
+Open [http://localhost:4000/](http://localhost:4000/) in our brownser.
 
 ## GraphQL
 Used to solve problems like:
