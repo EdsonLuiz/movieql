@@ -18,9 +18,10 @@ export function getById(id) {
 
 export function deleteMovie(id) {
   if(!getById(id))
-    return
+    return false
 
   movies = movies.filter(m => m.id !== id)
+  return true
 }
 
 export function create(name, score) {
