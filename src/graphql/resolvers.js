@@ -1,19 +1,9 @@
-import {getMovies, getById, create, deleteMovie} from './db'
+import {getMovies} from './db'
 
-const edson = {
-  name: 'Edson Luiz',
-  language: 'pt-br',
-  state: 'RS'
-}
 
 const resolvers = {
   Query: {
-    movies: () => getMovies(),
-    movie: (_, {id}) => getById(id)
-  },
-  Mutation: {
-    addMovie: (_, {name, score}) => create(name, score),
-    deleteMovie:(_, {id}) => deleteMovie(id)
+    movies: (_, {limit, rating}) => getMovies(limit, rating),
   }
 
 }
